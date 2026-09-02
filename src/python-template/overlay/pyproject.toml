@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{PROJECT_SLUG}}"
+version = "0.1.0"
+description = "Describe {{PROJECT_NAME}}."
+readme = "README_EN.md"
+requires-python = ">={{PYTHON_VERSION}}"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "build>=1.2,<2",
+  "pytest>=8.3,<9",
+  "ruff>=0.11,<1"
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests/{{PYTHON_PACKAGE}}"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

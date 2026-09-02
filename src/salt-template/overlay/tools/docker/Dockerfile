@@ -1,0 +1,3 @@
+FROM python:3.12-slim
+
+RUN python -m pip install --no-cache-dir "salt-lint==0.9.2"

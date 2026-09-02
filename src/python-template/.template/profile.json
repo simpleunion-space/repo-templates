@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "id": "python",
+  "parentProfile": "base",
+  "requiredBaseSchemaVersion": 2,
+  "requiredParentSchemaVersion": 2,
+  "requiredTokens": [
+    "PROJECT_NAME",
+    "PROJECT_SLUG",
+    "PYTHON_PACKAGE",
+    "PYTHON_VERSION"
+  ],
+  "fragments": [
+    {
+      "source": "fragments/.gitignore",
+      "target": ".gitignore"
+    },
+    {
+      "source": "fragments/.editorconfig",
+      "target": ".editorconfig"
+    }
+  ],
+  "removePaths": [
+    "src/.gitkeep",
+    "tests/.gitkeep"
+  ],
+  "pathRequirements": [
+    { "path": "build", "kind": "directory", "status": "required" },
+    { "path": "build/{{PYTHON_PACKAGE}}", "kind": "directory", "status": "required" },
+    { "path": "build/{{PYTHON_PACKAGE}}/.gitkeep", "kind": "file", "status": "required" }
+  ]
+}

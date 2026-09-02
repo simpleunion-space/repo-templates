@@ -1,0 +1,9 @@
+services:
+  build:
+    build:
+      context: ../..
+      dockerfile: tools/docker/Dockerfile
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/build.sh"]
+    volumes:
+      - ../..:/workspace

@@ -1,0 +1,9 @@
+services:
+  verify:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/verify.sh"]
+    volumes:
+      - ../..:/workspace:ro

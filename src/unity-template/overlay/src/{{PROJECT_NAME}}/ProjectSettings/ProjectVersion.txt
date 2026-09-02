@@ -1,0 +1,2 @@
+m_EditorVersion: {{UNITY_VERSION}}
+m_EditorVersionWithRevision: {{UNITY_VERSION}}

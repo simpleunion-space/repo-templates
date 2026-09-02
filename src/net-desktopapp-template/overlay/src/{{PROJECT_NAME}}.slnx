@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="{{PROJECT_NAME}}.Core/{{PROJECT_NAME}}.Core.csproj" />
+  <Project Path="{{PROJECT_NAME}}.DesktopApp/{{PROJECT_NAME}}.DesktopApp.csproj" />
+  <Project Path="../tests/{{PROJECT_NAME}}.Core/{{PROJECT_NAME}}.Core.Tests.csproj" />
+  <Project Path="../tests/{{PROJECT_NAME}}.DesktopApp/{{PROJECT_NAME}}.DesktopApp.Tests.csproj" />
+</Solution>

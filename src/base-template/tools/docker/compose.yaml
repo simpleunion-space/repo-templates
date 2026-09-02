@@ -1,0 +1,11 @@
+name: "{{PROJECT_SLUG}}"
+
+services:
+  workspace:
+    image: alpine:3.21
+    working_dir: /workspace
+    command: ["sh", "-c", "trap : TERM INT; sleep infinity & wait"]
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../..:/workspace

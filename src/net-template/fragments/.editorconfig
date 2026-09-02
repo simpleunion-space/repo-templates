@@ -1,0 +1,4 @@
+[*.cs]
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+csharp_prefer_braces = true:warning

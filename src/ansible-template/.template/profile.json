@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "id": "ansible",
+  "parentProfile": "iac-base",
+  "requiredBaseSchemaVersion": 2,
+  "requiredParentSchemaVersion": 2,
+  "requiredTokens": ["PROJECT_NAME", "PROJECT_SLUG"],
+  "fragments": [
+    { "source": "fragments/.gitignore", "target": ".gitignore" }
+  ],
+  "removePaths": [
+    "src/modules", "src/environments"
+  ],
+  "pathRequirements": []
+}

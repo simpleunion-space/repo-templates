@@ -1,0 +1,14 @@
+services:
+  template-verify:
+    build:
+      context: .
+      dockerfile: tests.Dockerfile
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/verify.sh"]
+    environment:
+      TEMPLATE_BIND_MOUNT_ROOT: /workspace/.cache/template-bind-mount
+    volumes:
+      - ../..:/workspace:ro
+      - ../../.cache/template-bind-mount:/workspace/.cache/template-bind-mount
+    tmpfs:
+      - /tmp

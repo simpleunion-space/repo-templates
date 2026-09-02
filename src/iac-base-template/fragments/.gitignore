@@ -1,0 +1,4 @@
+# IaC local working output
+.state/
+artifacts/
+reports/

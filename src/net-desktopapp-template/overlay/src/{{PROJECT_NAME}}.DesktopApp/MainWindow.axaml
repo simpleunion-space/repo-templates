@@ -1,0 +1,10 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="{{PROJECT_NAME}}.DesktopApp.MainWindow"
+        Title="{{PROJECT_NAME}}"
+        Width="800"
+        Height="450">
+  <TextBlock HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Text="{{PROJECT_NAME}} desktop application" />
+</Window>

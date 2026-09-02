@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "id": "iac-base",
+  "parentProfile": "base",
+  "requiredBaseSchemaVersion": 2,
+  "requiredParentSchemaVersion": 2,
+  "requiredTokens": [
+    "PROJECT_NAME",
+    "PROJECT_SLUG"
+  ],
+  "fragments": [
+    {
+      "source": "fragments/.gitignore",
+      "target": ".gitignore"
+    }
+  ],
+  "removePaths": [
+    "src/.gitkeep"
+  ],
+  "pathRequirements": []
+}

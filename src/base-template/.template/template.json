@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "id": "base",
+  "requiredTokens": [
+    "PROJECT_NAME",
+    "PROJECT_SLUG"
+  ],
+  "pathRequirements": [
+    { "path": "src", "kind": "directory", "status": "required" },
+    { "path": "make", "kind": "directory", "status": "required" },
+    { "path": "tests", "kind": "directory", "status": "required" },
+    { "path": "tools", "kind": "directory", "status": "required" },
+    { "path": "docs", "kind": "directory", "status": "optional" },
+    { "path": "build", "kind": "directory", "status": "optional" },
+    { "path": "README.md", "kind": "file", "status": "required" },
+    { "path": "README_EN.md", "kind": "file", "status": "required" },
+    { "path": "AGENTS.md", "kind": "file", "status": "required" },
+    { "path": "AGENTS_EN.md", "kind": "file", "status": "required" },
+    { "path": "CODESTYLE.md", "kind": "file", "status": "required" },
+    { "path": "CODESTYLE_EN.md", "kind": "file", "status": "required" },
+    { "path": "make/Makefile", "kind": "file", "status": "required" },
+    { "path": "tools/scripts/verify.sh", "kind": "file", "status": "required" },
+    { "path": "tools/scripts/verify-template.sh", "kind": "file", "status": "required" },
+    { "path": "tools/scripts/build.sh", "kind": "file", "status": "required" },
+    { "path": "tools/scripts/tests.sh", "kind": "file", "status": "required" },
+    { "path": "tools/docker/Dockerfile", "kind": "file", "status": "required" },
+    { "path": "tools/docker/verify.yaml", "kind": "file", "status": "required" },
+    { "path": "tools/docker/build.yaml", "kind": "file", "status": "required" },
+    { "path": "tools/docker/tests.yaml", "kind": "file", "status": "required" },
+    { "path": "tools/docker/compose.yaml", "kind": "file", "status": "required" }
+  ]
+}

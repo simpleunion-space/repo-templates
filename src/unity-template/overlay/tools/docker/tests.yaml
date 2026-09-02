@@ -1,0 +1,20 @@
+services:
+  tests:
+    image: ${UNITY_EDITOR_IMAGE:?Set UNITY_EDITOR_IMAGE to a GameCI Unity editor image.}
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/tests.sh"]
+    environment:
+      UNITY_LICENSE: ${UNITY_LICENSE:-}
+    volumes:
+      - ../..:/workspace:ro
+      - ../../tests/{{PROJECT_NAME}}:/workspace/tests/{{PROJECT_NAME}}
+      - unity-library:/workspace/src/{{PROJECT_NAME}}/Library
+      - unity-temp:/workspace/src/{{PROJECT_NAME}}/Temp
+      - unity-logs:/workspace/src/{{PROJECT_NAME}}/Logs
+      - unity-user-settings:/workspace/src/{{PROJECT_NAME}}/UserSettings
+
+volumes:
+  unity-library:
+  unity-temp:
+  unity-logs:
+  unity-user-settings:

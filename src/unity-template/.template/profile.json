@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "id": "unity",
+  "parentProfile": "base",
+  "requiredBaseSchemaVersion": 2,
+  "requiredParentSchemaVersion": 2,
+  "requiredTokens": [
+    "PROJECT_NAME",
+    "UNITY_VERSION"
+  ],
+  "fragments": [
+    {
+      "source": "fragments/.gitignore",
+      "target": ".gitignore"
+    },
+    {
+      "source": "fragments/.gitattributes",
+      "target": ".gitattributes"
+    },
+    {
+      "source": "fragments/.editorconfig",
+      "target": ".editorconfig"
+    }
+  ],
+  "removePaths": [
+    "src/.gitkeep",
+    "tests/.gitkeep"
+  ],
+  "pathRequirements": [
+    { "path": "build", "kind": "directory", "status": "required" },
+    { "path": "build/{{PROJECT_NAME}}", "kind": "directory", "status": "required" },
+    { "path": "build/{{PROJECT_NAME}}/.gitkeep", "kind": "file", "status": "required" }
+  ]
+}

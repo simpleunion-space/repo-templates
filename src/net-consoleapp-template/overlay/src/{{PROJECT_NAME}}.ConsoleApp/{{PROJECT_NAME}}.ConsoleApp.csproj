@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>{{PROJECT_NAME}}.ConsoleApp</AssemblyName>
+    <RootNamespace>{{PROJECT_NAME}}.ConsoleApp</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\{{PROJECT_NAME}}.Core\{{PROJECT_NAME}}.Core.csproj" />
+  </ItemGroup>
+</Project>

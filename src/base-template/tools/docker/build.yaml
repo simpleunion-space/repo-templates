@@ -1,0 +1,8 @@
+services:
+  build:
+    image: alpine:3.21
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/build.sh"]
+    volumes:
+      - ../..:/workspace:ro
+      - ../../build:/workspace/build

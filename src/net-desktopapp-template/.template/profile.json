@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "id": "net-desktopapp",
+  "parentProfile": "net",
+  "requiredBaseSchemaVersion": 2,
+  "requiredParentSchemaVersion": 2,
+  "requiredTokens": [
+    "PROJECT_NAME",
+    "PROJECT_SLUG",
+    "DOTNET_SDK_VERSION",
+    "TARGET_FRAMEWORK"
+  ],
+  "fragments": [],
+  "removePaths": [],
+  "pathRequirements": [
+    { "path": "build/{{PROJECT_NAME}}.DesktopApp", "kind": "directory", "status": "required" },
+    { "path": "build/{{PROJECT_NAME}}.DesktopApp/.gitkeep", "kind": "file", "status": "required" }
+  ]
+}

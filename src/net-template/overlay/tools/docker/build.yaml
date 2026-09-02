@@ -1,0 +1,7 @@
+services:
+  build:
+    image: mcr.microsoft.com/dotnet/sdk:10.0
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/build.sh"]
+    volumes:
+      - ../..:/workspace

@@ -1,0 +1,3 @@
+[*.cs]
+indent_size = 4
+csharp_prefer_braces = true:warning

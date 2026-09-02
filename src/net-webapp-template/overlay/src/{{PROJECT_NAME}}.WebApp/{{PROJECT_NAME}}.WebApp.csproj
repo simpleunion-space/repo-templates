@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>{{PROJECT_NAME}}.WebApp</AssemblyName>
+    <RootNamespace>{{PROJECT_NAME}}.WebApp</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\{{PROJECT_NAME}}.Core\{{PROJECT_NAME}}.Core.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+services:
+  tests:
+    image: alpine:3.21
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/tests.sh"]
+    volumes:
+      - ../..:/workspace:ro

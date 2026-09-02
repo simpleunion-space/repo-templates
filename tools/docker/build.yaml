@@ -1,0 +1,11 @@
+services:
+  template-build:
+    build:
+      context: .
+      dockerfile: tests.Dockerfile
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/build.sh"]
+    volumes:
+      - ../..:/workspace:ro
+    tmpfs:
+      - /tmp

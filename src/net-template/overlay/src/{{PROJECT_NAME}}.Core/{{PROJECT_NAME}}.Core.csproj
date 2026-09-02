@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>{{PROJECT_NAME}}.Core</AssemblyName>
+    <RootNamespace>{{PROJECT_NAME}}.Core</RootNamespace>
+  </PropertyGroup>
+</Project>

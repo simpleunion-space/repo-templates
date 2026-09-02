@@ -1,0 +1,17 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+*.csproj
+*.sln
+*.user
+*.unityproj
+unity-editmode-results.xml
+unity-editmode.log
+!build/
+!build/*/
+!build/*/.gitkeep

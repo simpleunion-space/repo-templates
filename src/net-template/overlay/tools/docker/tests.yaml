@@ -1,0 +1,7 @@
+services:
+  tests:
+    image: mcr.microsoft.com/dotnet/sdk:10.0
+    working_dir: /workspace
+    command: ["sh", "tools/scripts/tests.sh"]
+    volumes:
+      - ../..:/workspace
