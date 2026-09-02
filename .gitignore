@@ -1,0 +1,21 @@
+# OS and IDE state
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vs/
+.vscode/
+.idea/
+
+# AI tool state
+.agents/
+.codex/
+.claude/
+.opencode/
+
+# Temporary verification output
+.cache/
+.tmp/
+*.log
+
+# Build output
+/build/
